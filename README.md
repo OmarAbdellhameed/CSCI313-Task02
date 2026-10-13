@@ -5,3 +5,5 @@ Simple Calculator Program
 Main branch -> Added simple calculations
 
 constraints branch -> handled division by zero and merged to main
+
+Workflow added for greeting
