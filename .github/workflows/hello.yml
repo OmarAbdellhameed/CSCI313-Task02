@@ -1,3 +1,4 @@
+
 name: Hello Software Engineering
 
 on:
@@ -8,7 +9,13 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
-
     steps:
       - name: Print greeting
         run: echo 'hello software engineering'
+
+  calculator:
+    runs-on: ubuntu-latest
+    needs: hello
+    steps:
+      - name: Run calculator job
+        run: echo 'Running calculator job'
